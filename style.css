@@ -194,6 +194,7 @@ h6 span {
   text-transform: uppercase;
   background-color: #00FFE3;
   color: #000000;
+  box-shadow: 0 8px 24px 0 rgba(255, 255, 255, 0.205);
   letter-spacing: 1px;
   display: inline-flex;
   align-items: center;
@@ -204,5 +205,21 @@ h6 span {
 .btn:hover {
   background-color: #000000;
   color: #00FFE3;
-  box-shadow: 0 8px 24px 0 rgba(16,39,112,2);
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.56);
 }
+
+/* Button disabled effect */
+.btn:disabled {
+  background-color: #000000;
+  color: #ffffffb2;
+  box-shadow: 0 8px 24px 0 rgb(63, 61, 61);
+  cursor: not-allowed;
+}
+
+/* Error message styling */
+.error-msg {
+  color: #f00909ee;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
