@@ -18,107 +18,83 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="section">
-      <div class="container">
-        <div class="row full-height justify-content-center">
-          <div class="col-12 text-center align-self-center py-5">
-            <div class="section pb-5 pt-5 pt-sm-2 text-center">
-              
-              <!-- Header text switcher -->
-              <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-
-              <!-- Toggle checkbox for switching between forms -->
-              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-              <label for="reg-log"></label>
-
-              <!-- 3D card wrap for flip effect -->
-              <div class="card-3d-wrap mx-auto">
-                <div class="card-3d-wrapper">
-                  
-                  <!-- Front side: Login form -->
-                  <div class="card-front">
-                    <div class="center-wrap">
-                      <div class="section text-center">
-                        <h4 class="mb-4 pb-3">Log In</h4>
-
-                        <!-- Login form -->
-                        <form action="" id="login-form" novalidate>
-
-                            <!-- Email input -->
-                            <div class="form-group">
-                              <input type="email" id="email-login" class="form-style" placeholder="Email">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-at"></i>
-                            </div>
-
-                            <!-- Password input -->
-                            <div class="form-group mt-2">
-                              <input type="password" id="password-login" class="form-style" placeholder="Password">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-lock-alt"></i>
-                            </div>
-
-                            <!-- Login button -->
-                            <button type="submit" id="login-btn" class="btn mt-4" disabled >Login</button>
-
-                            <!-- Forgot password link -->
-                            <p class="mb-0 mt-4 text-center"><a href="" class="link">Forgot your password?</a></p>
-                        </form>
+    <div class="page-wrapper">
+      <div class="card-container">
+        <!-- Header text switcher -->
+        <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+        <!-- Toggle checkbox for switching between forms -->
+        <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+        <label for="reg-log"></label>
+        <!-- 3D card wrap for flip effect -->
+        <div class="card-3d-wrap mx-auto">
+          <div class="card-3d-wrapper">
+            <!-- Front side: Login form -->
+            <div class="card-front">
+              <div class="center-wrap">
+                <div class="section text-center">
+                  <h4 class="mb-4 pb-3">Log In</h4>
+                  <!-- Login form -->
+                  <form action="" id="login-form" novalidate>
+                      <!-- Email input -->
+                      <div class="form-group">
+                        <input type="email" id="email-login" class="form-style" placeholder="Email">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-at"></i>
                       </div>
-                    </div>
-                  </div>
-
-                  <!-- Back side: Sign up form -->
-                  <div class="card-back">
-                    <div class="center-wrap">
-                      <div class="section text-center">
-                        <h4 class="mb-3 pb-3">Sign Up</h4>
-
-                        <!-- Sign up form -->
-                        <form action="" id="signup-form" novalidate>
-
-                            <!-- Full name input -->
-                            <div class="form-group">
-                              <input type="text" id="full-name-signup" class="form-style" placeholder="Full Name">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-user"></i>
-                            </div>
-
-                            <!-- Phone number input -->
-                            <div class="form-group mt-2">
-                              <input type="tel" id="phone-number-signup" class="form-style" placeholder="Phone Number">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-phone"></i>
-                            </div>
-
-                            <!-- Email input -->
-                            <div class="form-group mt-2">
-                              <input type="email" id="email-signup" class="form-style" placeholder="Email">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-at"></i>
-                            </div>
-
-                            <!-- Password input -->
-                            <div class="form-group mt-2">
-                              <input type="password" id="password-signup" class="form-style" placeholder="Password">
-                              <small class="error-msg"></small>
-                              <i class="input-icon uil uil-lock-alt"></i>
-                            </div>
-
-                            <!-- Register button -->
-                            <button type="submit" id="register-btn" class="btn mt-4" disabled>Register</button>
-                        </form>
+                      <!-- Password input -->
+                      <div class="form-group mt-2">
+                        <input type="password" id="password-login" class="form-style" placeholder="Password">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-lock-alt"></i>
                       </div>
-                    </div>
-                  </div> <!-- end card-back -->
-
-                </div> <!-- end card-3d-wrapper -->
-              </div> <!-- end card-3d-wrap -->
-
+                      <!-- Login button -->
+                      <button type="submit" id="login-btn" class="btn mt-4" disabled >Login</button>
+                      <!-- Forgot password link -->
+                      <p class="mb-0 mt-4 text-center"><a href="" class="link">Forgot your password?</a></p>
+                  </form>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+            <!-- Back side: Sign up form -->
+            <div class="card-back">
+              <div class="center-wrap">
+                <div class="section text-center">
+                  <h4 class="mb-3 pb-3">Sign Up</h4>
+                  <!-- Sign up form -->
+                  <form action="" id="signup-form" novalidate>
+                      <!-- Full name input -->
+                      <div class="form-group">
+                        <input type="text" id="full-name-signup" class="form-style" placeholder="Full Name">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-user"></i>
+                      </div>
+                      <!-- Phone number input -->
+                      <div class="form-group mt-2">
+                        <input type="tel" id="phone-number-signup" class="form-style" placeholder="Phone Number">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-phone"></i>
+                      </div>
+                      <!-- Email input -->
+                      <div class="form-group mt-2">
+                        <input type="email" id="email-signup" class="form-style" placeholder="Email">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-at"></i>
+                      </div>
+                      <!-- Password input -->
+                      <div class="form-group mt-2">
+                        <input type="password" id="password-signup" class="form-style" placeholder="Password">
+                        <small class="error-msg"></small>
+                        <i class="input-icon uil uil-lock-alt"></i>
+                      </div>
+                      <!-- Register button -->
+                      <button type="submit" id="register-btn" class="btn mt-4" disabled>Register</button>
+                  </form>
+                </div>
+              </div>
+            </div> <!-- end card-back -->
+          </div> <!-- end card-3d-wrapper -->
+        </div> <!-- end card-3d-wrap -->
+      </div>      
     </div>
   </body>
 </html>
