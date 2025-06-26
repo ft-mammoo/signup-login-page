@@ -120,11 +120,13 @@ function clearError(input){
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
     validateLogin();
+    alert("Login successful!");
 
 })
 
 signupForm.addEventListener("submit", (e) => {
     e.preventDefault();
     validateSignup();
+    alert("Registration successful!");
 })
 
